@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Производство мягких игрушек</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <a href="#" class="logo"><span class="play">Игра</span><span class="world">мир</span></a>
+        <a href="#"><img src="./img/logo.jpg" alt=""></a>
+    </div>
+    <nav class="nav">
+    <ul class="list">
+    <li><a href="" class="item">Главная</a></li>
+    <li><a href="" class="item">О нас</a></li>
+    <li><a href="" class="item">Наши работы</a></li>
+    <li><a href="" class="item">Нам доверяют</a></li>
+    <li><a href="" class="item">Почему мы</a></li>
+    </ul>
+    </nav>
+    <li class="contact"><a href="" class="item">Контакты +7(499) 480-47-35</a></li>
+
+    <!-- burger-menu -->
+    
+    <div class="burger-menu">
+        <a href="" class="burger-menu_button">
+          <spun class="burger-menu_lines"></spun>
+        </a>
+        <nav class="burger-menu_nav">
+          <a href="#" class="burger-menu_link">Главная</a>
+          <a href="#" class="burger-menu_link">О нас</a>
+          <a href="#" class="burger-menu_link">Наши работы</a>
+          <a href="#" class="burger-menu_link">Нам доверяют</a>
+          <a href="#" class="burger-menu_link">Почему мы</a>
+          <a href="#" class="burger-menu_link">Контакты +7(499) 480-47-35</a>
+        
+        </nav>
+        <div class="burger-menu_overlay"></div>
+      </div>
+    </header>
+
+<main>
+<section class="page-1">
+    <div class="container">
+        <div class="text-section">
+            <h1>Изготавливаем мягкие игрушки на заказ <br> по вешему дизайну</h1>
+            <p>Сделано в Россиии</p>
+            <div class="btn-container">
+                <a  class="btn" data-fancybox href="#modal">Оформить заказ</a>
+            </div>
+            <!-- #myModal -->
+            <div style="display: none; width: 500px;" id="modal">
+                <h2 class="zakaz">Оформить заказ</h2>
+                <form action="#" method="post">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Организация:</label>
+                    <input type="text" id="org" name="name" required>
+                    <label for="name">Тираж</label>
+                    <input type="text" id="tirag" name="name" required>
+
+                    <label for="name">Телефон:</label>
+                    <input type="text" id="tel" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="address">Адрес доставки:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+        
+               
+                    <button class="btn-zakaz" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+        <div class="image-section">
+           
+            <img src="./img/bear-Photoroom.png" alt="Изображение" class="animate" id="image">
+        </div>
+    </div>
+   <div class="qwalety">
+    <div class="box">
+        <img width="64" height="64" src="https://img.icons8.com/nolan/64/good-quality.png" alt="good-quality"/>
+        <p>Качественные</p>
+    </div>
+    <div class="box">
+        <img width="64" height="64" src="https://img.icons8.com/nolan/64/star.png" alt="star"/>
+        <p>Стильные</p>
+    </div>
+    <div class="box">
+        <img width="64" height="64" src="https://img.icons8.com/nolan/64/diamond-heart.png" alt="diamond-heart"/>
+        <p>Любимые</p>
+    </div>
+   </div>
+   
+</section>
+
+<section class="page-2">
+<h2 class="about">О нас</h2>
+<div class="about-container">
+
+    <div class="about-text">
+<p class="content-about">
+    <span>Фабрика "Играмир"</span>- ведущий российский производитель мягких игрушек. <br> Одно из приоритетных направлений <br> для нас – производство игрушек по вашему дизайну. <br>
+При производстве игрушек мы уделяем большое внимание <br> дизайну, качеству и экологичности. <br>
+Мы используем только качественные и безопасные материалы.
+</p>
+<div class="years-old">
+    <h2 class="years-old-content">
+        <span class="year">25</span> <br> лет на рынке
+    </h2>
+ </div>
+</div>
+ 
+    <div class="about-img">
+        <div class="img-about-1">
+            <img src="./img/лиса.png" class="img-fox" id="image2" alt=""> 
+        </div>
+  <br>
+<!-- <img src="" alt=""> -->
+
+    </div>
+</div>
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

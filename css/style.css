@@ -1,0 +1,365 @@
+/* шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  -webkit-box-shadow: -2px -5px 5px -4px rgba(34, 60, 80, 0.41) inset;
+  -moz-box-shadow: -2px -5px 5px -4px rgba(34, 60, 80, 0.41) inset;
+  box-shadow: -2px -5px 5px -4px rgba(34, 60, 80, 0.41) inset;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.item {
+  text-decoration: none;
+  color: rgb(9, 126, 243);
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contact {
+  list-style: none;
+}
+
+.play {
+  color: red;
+}
+
+.world {
+  color: rgb(0, 68, 255);
+}
+
+.logo {
+  font-size: 25px;
+  text-decoration: none;
+}
+img {
+  width: 100px;
+  height: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.item:hover {
+  color: rgb(10, 202, 240);
+}
+
+/* burger */
+.burger-menu_button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  display: none;
+}
+.burger-menu_button:hover .burger-menu_lines {
+  filter: brightness(0.7);
+}
+
+.burger-menu_button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu_lines::before {
+  content: "";
+  top: -12px;
+}
+.burger-menu_lines::after {
+  content: "";
+  top: 12px;
+}
+
+.burger-menu_active .burger-menu_lines {
+  background-color: transparent;
+}
+.burger-menu_active .burger-menu_lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu_lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu_nav {
+  padding-top: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 50%;
+  background-color: #08aff7;
+  overflow-y: auto;
+  right: -100vh;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.burger-menu_active .burger-menu_nav {
+  right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_link {
+  padding: 18px 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+}
+.burger-menu_link:first-child {
+  border-top: 1px solid #fff;
+}
+.burger-menu_link:hover {
+  filter: brightness(0.9);
+}
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.burger-menu_active .burger-menu_overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 200px;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.animate {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+  transition: transform 0.5s ease;
+}
+
+.text-section h1 {
+  margin-bottom: 20px;
+  font-size: 55px;
+  
+  color: #0820f7;
+}
+
+.text-section p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f70808;
+  font-size: 22px;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #0820f7;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #9bdcf8;
+  color: #0820f7;
+}
+
+.box {
+  height: auto;
+  width: 130px;
+  padding: 15px;
+  background-color: rgb(17, 218, 218);
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.qwalety {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 40px;
+  margin-left: 150px;
+}
+
+.qwalety p {
+  color: #0820f7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Форма заказа */
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  text-align: center;
+}
+.btn-zakaz {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: #0820f7;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.zakaz {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  border: 1px solid red;
+  align-items: center;
+  gap: 70px;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+
+.about {
+  margin-top: 60px;
+  margin-left: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  color: #0820f7;
+  margin-bottom: 60px;
+}
+
+.content-about {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+
+span {
+  color: #0820f7;
+}
+
+.about-text {
+  margin-left: 60px;
+}
+
+.years-old-content {
+  text-align: center;
+  color: rgb(10, 66, 249);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.years-old {
+  margin-top: 90px;
+}
+
+.year{
+ 
+  font-size: 150px;
+}
+
+.page-1{
+  background-color: rgb(152, 245, 245);
+}
+
+
+.img-fox{
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+}
+
+/* media */
+
+@media (max-width: 1070px) {
+  .burger-menu_button {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
