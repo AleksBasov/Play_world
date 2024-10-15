@@ -6,6 +6,10 @@
     <title>Производство мягких игрушек</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header class="header">
@@ -147,8 +151,26 @@
 </section>
 
 <section class="page-3">
-    <h2 class="work">Примеры наших работ</h2>
+    <h2 class="work"> наши работы</h2>
+
+<!-- swiper -->
+
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/slide1.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
+      <div class="swiper-slide"><img src="./img/slide3.png" alt=""></div>
+      <div class="swiper-slide">Slide 4</div>
+     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+   
+  </div>
+
+   
 </section>
+
 </main>
 
 
@@ -162,6 +184,7 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
