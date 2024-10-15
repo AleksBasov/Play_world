@@ -36,15 +36,23 @@ burgerMenu('.burger-menu');
 // Gasp animate
 const image = document.getElementById('image');
 const image2 = document.getElementById('image2');
+const image3 = document.getElementById('image3');
 
 function swing() {
-    gsap.to(image, { rotation: 9, duration: 0.5, yoyo: true, repeat: 1 });
+    gsap.to(image, { rotation: 9, duration: 0.5, yoyo: true, repeat: -1, ease: "power1.inOut"  });
 
     gsap.to(image2, { 
         y: -14,
         duration: 0.5,
         yoyo: true,
-        repeat: 1,
+        repeat: -1,
+        ease: "power1.inOut" 
+     });
+    gsap.to(image3, { 
+        y: -14,
+        duration: 0.5,
+        yoyo: true,
+        repeat: -1,
         ease: "power1.inOut" 
      });
 }
