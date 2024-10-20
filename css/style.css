@@ -32,6 +32,7 @@ header {
 }
 .contact {
   list-style: none;
+  margin-left: 150px;
 }
 
 .play {
@@ -405,6 +406,7 @@ span {
   color: #0820f7;
   padding-top: 40px;
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .col-1 {
@@ -454,27 +456,72 @@ span {
 }
 
 .brends{
-margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .brend img{
   width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
+footer{
+  background-color: #eeeded;
+  color: #000000;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-nav{
+  margin: 0 auto;
+}
+
+.contact-footer{
+  list-style: none;
+  margin-right: 100px;
+}
+
+.list-footer{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.footer-bottom{
+ display: flex;
+justify-content: center;
+
+}
 /* media */
 
-@media (max-width: 1070px) {
+@media (max-width: 1250px) {
   .burger-menu_button {
     display: block;
   }
-  nav {
+  .nav-header {
     display: none;
   }
   .contact {
     display: none;
+  }
+}
+@media (max-width: 1190px) {
+  .list-footer{
+    flex-direction: column;
+    text-align: center;
+   
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
   }
 }
