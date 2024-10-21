@@ -21,7 +21,7 @@ header {
 .list {
   display: flex;
   list-style-type: none;
-  gap: 25px;
+  gap: 40px;
 }
 
 .item {
@@ -35,17 +35,12 @@ header {
   margin-left: 150px;
 }
 
-.play {
-  color: red;
-}
 
-.world {
-  color: rgb(0, 68, 255);
-}
 
 .logo {
   font-size: 25px;
   text-decoration: none;
+  color: red;
 }
 img {
   width: 100px;
@@ -199,9 +194,10 @@ img {
 
 .text-section h1 {
   margin-bottom: 20px;
-  font-size: 55px;
-
-  color: #0820f7;
+  font-size: 50px;
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+text-align: center;
 }
 
 .text-section p {
@@ -213,43 +209,39 @@ img {
 .btn-container {
   text-align: center;
   margin-top: 100px;
+
 }
 
 .btn {
   text-decoration: none;
-  background-color: #0820f7;
+  background-color: #FD9620;
   color: white;
-  padding: 18px;
-  font-size: 18px;
-  border-radius: 10px;
-  transition: 0.5s;
+  padding: 8px 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.btn:hover {
-  background-color: #9bdcf8;
-  color: #0820f7;
-}
+
 
 .box {
-  height: auto;
-  width: 130px;
-  padding: 15px;
-  background-color: rgb(17, 218, 218);
+  padding: 40px;
   text-align: center;
-  border-radius: 15px;
-  margin-bottom: 40px;
+
 }
 
 .qwalety {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 40px;
-  margin-left: 250px;
+margin-left: 250px;
+max-width:  700px;
+  
 }
 
 .qwalety p {
-  color: #0820f7;
+  color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
 }
 
 /* Форма заказа */
@@ -334,7 +326,7 @@ span {
 }
 
 .page-1 {
-  background-color: rgb(152, 245, 245);
+  background-color: #FDDCB7;
 }
 
 .img-fox {
