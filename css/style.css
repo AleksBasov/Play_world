@@ -566,3 +566,48 @@ html{
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 768px) {
+.text-section h1{
+font-size: 36px;
+padding-top: 78px;
+}
+   .text-section{
+    font-size: 20px;
+   }
+   .about{
+    font-size: 40px;
+   }
+   .work{
+    font-size: 40px;
+   }
+   .zagolovok-page4{
+    font-size: 40px;
+   }
+   .about-img{
+margin: 0 auto;
+   
+   }
+  }
+
+@media (max-width: 480px) {
+.text-section h1{
+font-size: 24px;
+padding-top: 78px;
+}
+   .content-about{
+    font-size: 16px;
+   }
+   .about{
+    font-size: 32px;
+   }
+   .work{
+    font-size: 32px;
+   }
+   .zagolovok-page4{
+    font-size: 32px;
+   }
+
+   
+  }
