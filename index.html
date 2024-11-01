@@ -1,294 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Производство мягких игрушек</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo-container">
+      <div class="logo-container">
         <a href="#" class="logo">Мягкие Мечты</a>
-        <a href="#"><img src="./img/logo.jpg" alt=""></a>
-    </div>
-    <nav class="nav-header">
-    <ul class="list">
-    <li><a href="" class="item">Главная</a></li>
-    <li><a href="" class="item">О Компании</a></li>
-    <li><a href="" class="item">Наши работы</a></li>
-    <li><a href="" class="item">Нам доверяют</a></li>
-    <li><a href="" class="item">Почему мы</a></li>
-    <li class="contact"><a href="" class="item">Контакты +7(499) 480-47-35</a></li>
-    </ul>
-    </nav>
-   
+        <a href="#"><img src="./img/logo.jpg" alt="" /></a>
+      </div>
+      <nav class="nav-header">
+        <ul class="list">
+          <li><a href="" class="item">Главная</a></li>
+          <li><a href="#about" class="item">О Компании</a></li>
+          <li><a href="#rabotu" class="item">Наши работы</a></li>
+          <li><a href="#doverie" class="item">Нам доверяют</a></li>
+          <li><a href="#what_you" class="item">Почему мы</a></li>
+          <li><a href="#dostavka" class="item">Доставка и оплата</a></li>
+          <li class="contact">
+            <a href="#contact" class="item">Контакты +7(499) 480-47-35</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- burger-menu -->
-    
-    <div class="burger-menu">
+      <!-- burger-menu -->
+
+      <div class="burger-menu">
         <a href="" class="burger-menu_button">
           <spun class="burger-menu_lines"></spun>
         </a>
         <nav class="burger-menu_nav">
           <a href="#" class="burger-menu_link">Главная</a>
-          <a href="#" class="burger-menu_link">О нас</a>
-          <a href="#" class="burger-menu_link">Наши работы</a>
-          <a href="#" class="burger-menu_link">Нам доверяют</a>
-          <a href="#" class="burger-menu_link">Почему мы</a>
-          <a href="#" class="burger-menu_link">Контакты +7(499) 480-47-35</a>
-        
+          <a href="#about" class="burger-menu_link">О компании</a>
+          <a href="#rabotu" class="burger-menu_link">Наши работы</a>
+          <a href="#doverie" class="burger-menu_link">Нам доверяют</a>
+          <a href="what_you" class="burger-menu_link">Почему мы</a>
+          <a href="#contact" class="burger-menu_link"
+            >Контакты +7(499) 480-47-35</a
+          >
         </nav>
         <div class="burger-menu_overlay"></div>
       </div>
     </header>
 
-<main>
-<section class="page-1">
-    <div class="container">
-        <div class="text-section">
-            <h1>Изготавливаем мягкие игрушки на заказ <br>  по вешему дизайну</h1>
-         
+    <main>
+      <section class="page-1">
+        <div class="container">
+          <div class="text-section">
+            <h1>
+              Изготавливаем мягкие игрушки на заказ <br />
+              по вешему дизайну
+            </h1>
+
             <div class="btn-container">
-                <a  class="btn" data-fancybox href="#modal">Оформить заказ</a>
+              <a class="btn" data-fancybox href="#modal">Оформить заказ</a>
             </div>
             <!-- #myModal -->
-            <div style="display: none; width: 500px;" id="modal">
-                <h2 class="zakaz">Оформить заказ</h2>
-                <form action="#" method="post">
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" required>
+            <div style="display: none; width: 500px" id="modal">
+              <h2 class="zakaz">Оформить заказ</h2>
+              <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required />
 
-                    <label for="name">Организация:</label>
-                    <input type="text" id="org" name="name" required>
-                    <label for="name">Тираж</label>
-                    <input type="text" id="tirag" name="name" required>
+                <label for="name">Организация:</label>
+                <input type="text" id="org" name="name" required />
+                <label for="name">Тираж</label>
+                <input type="text" id="tirag" name="name" required />
 
-                    <label for="name">Телефон:</label>
-                    <input type="text" id="tel" name="name" required>
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="address">Адрес доставки:</label>
-                    <textarea id="address" name="address" rows="4" required></textarea>
-        
-               
-                    <button class="btn-zakaz" type="submit">Заказать</button>
-                </form>
+                <label for="name">Телефон:</label>
+                <input type="text" id="tel" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="address">Адрес доставки:</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="4"
+                  required
+                ></textarea>
+
+                <button class="btn-zakaz" type="submit">Заказать</button>
+              </form>
             </div>
+          </div>
+          <div class="image-section">
+            <img
+              src="./img/bear-Photoroom.png"
+              alt="Изображение"
+              class="animate"
+              id="image"
+            />
+          </div>
         </div>
-        <div class="image-section">
-           
-            <img src="./img/bear-Photoroom.png" alt="Изображение" class="animate" id="image">
+        <div class="qwalety">
+          <div class="box">
+            <img src="./icons/высокое-качество.png" alt="" />
+            <p>Качественные</p>
+          </div>
+          <div class="box">
+            <img src="./icons/стиль.png" alt="" />
+            <p>Стильные</p>
+          </div>
+          <div class="box">
+            <img src="./icons/сердце.png" alt="" />
+            <p>Любимые</p>
+          </div>
         </div>
-    </div>
-   <div class="qwalety">
-    <div class="box">
-        <img src="./icons/высокое-качество.png"  alt="">
-        <p>Качественные</p>
-    </div>
-    <div class="box">
-        <img src="./icons/стиль.png" alt="">
-        <p>Стильные</p>
-    </div>
-    <div class="box">
-       <img src="./icons/сердце.png" alt="">
-        <p>Любимые</p>
-    </div>
-   </div>
-   
-</section>
+      </section>
 
-<section class="page-2">
-<h2 class="about">О нас</h2>
-<div class="about-container">
-
-    <div class="about-text">
-<p class="content-about">
-    Фабрика "Играмир"- ведущий российский производитель мягких игрушек. <br> Одно из приоритетных направлений <br> для нас – производство игрушек по вашему дизайну. <br>
-При производстве игрушек мы уделяем большое внимание <br> дизайну, качеству и экологичности. <br>
-Мы используем только качественные и безопасные материалы.
-</p>
-<div class="years-old">
-    <h2 class="years-old-content">
-        <span class="year">25</span> <br> лет на рынке
-    </h2>
- </div>
-
-
-
- <div class="qwalety-2">
-    <div class="box">
-        <img src="./icons/производсттво.png"/>
-        <p>Полный цикл производства</p>
-    </div>
-    <div class="box">
-        <img src="./icons/для-детей.png"/> 
-        <p>Безопасно</p>
-    </div>
-    <div class="box">
-        <img  src="./icons/медведь.png" alt="bear"/>
-        <p>Красиво</p>
-    </div>
-   </div>
-</div>
- 
-    <div class="about-img">
-        <div class="img-about-1">
-            <img src="./img/Панда.png" class="img-fox" id="image2" alt=""> 
-        </div>
-  
-  <div class="img-about-2">
-    <img src="./img/заяц.png" class="img-hare" id="image3" alt=""> 
-</div>
-    </div>
-</div>
-</section>
-
-<section class="page-3">
-    <h2 class="work"> наши работы</h2>
-
-<!-- swiper -->
-<!-- доделать!!! -->
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./img/слайд 1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./img/слайд 2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./img/слайд 3.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./img/слайд 4.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="./img/слайд 5.jpg" alt=""></div>
-     
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-   
-  </div>
-
-   
-</section>
-
-<section class="page-4">
-
-    <div class="container-page4">
-        <h2 class="zagolovok-page4"> Почему мы?</h2> 
-        <div class="content-page-4">
-        
-        <div class="col-1">
-            <div class="text3">
-                <span class="icon"><img src="./icons/инновация.png" alt=""></span>
-                <span class="text">Индивидуальный <br>
-                    подход</span>
+      <section class="page-2" id="about">
+        <h2 class="about wow bounceInUp">О нас</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p class="content-about">
+              Фабрика "Играмир"- ведущий российский производитель мягких
+              игрушек. <br />
+              Одно из приоритетных направлений <br />
+              для нас – производство игрушек по вашему дизайну. <br />
+              При производстве игрушек мы уделяем большое внимание <br />
+              дизайну, качеству и экологичности. <br />
+              Мы используем только качественные и безопасные материалы.
+            </p>
+            <div class="years-old">
+              <h2 class="years-old-content">
+                <span class="year">25</span> <br />
+                лет на рынке
+              </h2>
             </div>
-            
-            <div class="text3">
-                <span class="icon"><img src="./icons/icons8-часы-100.png" alt=""></span>
-                <span class="text">Долговечность  </span>
+
+            <div class="qwalety-2">
+              <div class="box">
+                <img src="./icons/производсттво.png" />
+                <p>Полный цикл производства</p>
+              </div>
+              <div class="box">
+                <img src="./icons/для-детей.png" />
+                <p>Безопасно</p>
+              </div>
+              <div class="box">
+                <img src="./icons/медведь.png" alt="bear" />
+                <p>Красиво</p>
+              </div>
             </div>
-            <div class="text3">
-                <span class="icon"><img src="./icons/дизайн.png" alt=""></span>
-                <span class="text">Творческий <br>
-                    дизайн  </span>
+          </div>
+
+          <div class="about-img">
+            <div class="img-about-1">
+              <img src="./img/Панда.png" class="img-fox" id="image2" alt="" />
             </div>
-            <div class="text3">
-                <span class="icon"><img src="./icons/низкая цена.png" alt=""></span>
-                <span class="text">Низкая цена <br> 
-                    от производителя  </span>
+
+            <div class="img-about-2">
+              <img src="./img/заяц.png" class="img-hare" id="image3" alt="" />
             </div>
-            
+          </div>
         </div>
-        <div class="col-2">
-            <img src="./img/девочка с игрушкой.png" class="gerls" alt="">
+      </section>
+
+      <section class="page-3" id="rabotu">
+        <h2 class="work">наши работы</h2>
+
+        <!-- swiper -->
+        <!-- доделать!!! -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/слайд 1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/слайд 2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/слайд 3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/слайд 4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/слайд 5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-   
-    </div>
-</div>
-</section>
+      </section>
 
+      <section class="page-4">
+        <div class="container-page4" id="what_you">
+          <h2 class="zagolovok-page4">Почему мы?</h2>
+          <div class="content-page-4">
+            <div class="col-1">
+              <div class="text3">
+                <span class="icon"
+                  ><img src="./icons/инновация.png" alt=""
+                /></span>
+                <span class="text"
+                  >Индивидуальный <br/>
+                  подход</span
+                >
+              </div>
 
-<section class="page-5">
-    <div class="container-page5">
-        <h2 class="zagolovok-page4"> Нам доверяют</h2>
-        <div class="brends">
-           <div class="brend"><img src="./img/zenden.png" class="zenden" alt=""></div>
-           <div class="brend"><img src="./img/газпром.png" class="gazprom" alt=""></div>
-           <div class="brend"><img src="./img/мир.png" class="world" alt=""></div>
-           <div class="brend"><img src="./img/РЖД.png" class="RGD" alt=""></div>
-           <div class="brend"><img src="./img/Volkswagen.png" class="Volkswagen" alt=""></div>
-           <div class="brend"><img src="./img/LUK_OIL_Logo.png" class="Lukoil" alt=""></div>
-        
-    </div>
-    </div>
-</section>
+              <div class="text3">
+                <span class="icon"
+                  ><img src="./icons/icons8-часы-100.png" alt=""
+                /></span>
+                <span class="text">Долговечность </span>
+              </div>
+              <div class="text3">
+                <span class="icon"
+                  ><img src="./icons/дизайн.png" alt=""
+                /></span>
+                <span class="text"
+                  >Творческий <br />
+                  дизайн
+                </span>
+              </div>
+              <div class="text3">
+                <span class="icon"
+                  ><img src="./icons/низкая цена.png" alt=""
+                /></span>
+                <span class="text"
+                  >Низкая цена <br />
+                  от производителя
+                </span>
+              </div>
+            </div>
+            <div class="col-2">
+              <img src="./img/девочка с игрушкой.png" class="gerls" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="page-6">
-        <h2 class="zagolovok-page4"> Доставка и оплата</h2>
+      <section class="page-5" id="doverie">
+        <div class="container-page5">
+          <h2 class="zagolovok-page4">Нам доверяют</h2>
+          <div class="brends">
+            <div class="brend">
+              <img src="./img/zenden.png" class="zenden" alt="" />
+            </div>
+            <div class="brend">
+              <img src="./img/газпром.png" class="gazprom" alt="" />
+            </div>
+            <div class="brend">
+              <img src="./img/мир.png" class="world" alt="" />
+            </div>
+            <div class="brend">
+              <img src="./img/РЖД.png" class="RGD" alt="" />
+            </div>
+            <div class="brend">
+              <img src="./img/Volkswagen.png" class="Volkswagen" alt="" />
+            </div>
+            <div class="brend">
+              <img src="./img/LUK_OIL_Logo.png" class="Lukoil" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-6" id="dostavka">
+        <h2 class="zagolovok-page4">Доставка и оплата</h2>
         <div class="container-p6">
-           
-            <p>Мы стремимся сделать процесс покупки максимально удобным для вас.<br>Поэтому мы предлагаем несколько способов оплаты:</p> <br><br>
-            <ul class="payment-methods">
-                <li> <b>1. Банковская карта</b></li>
-                <li><b>2. Наложенный платеж</b></li>
-                <li> <b>3. Безналичный расчет</b></li>
-            </ul> <br>
-            <div class="delivery-info">
-                <h2>Доставка</h2> <br>
-                <p>Служба доставки: Мы сотрудничаем с надежными курьерскими службами, <br> которые обеспечивают быструю и качественную доставку по всей стране.</p> <br>
-                <p>Сроки доставки: Обычно доставка занимает от 3 до 7 рабочих дней в <br> зависимости от вашего региона.</p>
-            </div>
+          <p>
+            Мы стремимся сделать процесс покупки максимально удобным для вас.<br />Поэтому
+            мы предлагаем несколько способов оплаты:
+          </p>
+          <br /><br />
+          <ul class="payment-methods">
+            <li><b>1. Банковская карта</b></li>
+            <li><b>2. Наложенный платеж</b></li>
+            <li><b>3. Безналичный расчет</b></li>
+          </ul>
+          <br />
+          <div class="delivery-info">
+            <h2>Доставка</h2>
+            <br />
+            <p>
+              Служба доставки: Мы сотрудничаем с надежными курьерскими службами,
+              <br />
+              которые обеспечивают быструю и качественную доставку по всей
+              стране.
+            </p>
+            <br />
+            <p>
+              Сроки доставки: Обычно доставка занимает от 3 до 7 рабочих дней в
+              <br />
+              зависимости от вашего региона.
+            </p>
+          </div>
         </div>
-    
-</section>
+      </section>
 
-<footer>
-    <div class="footer-container">
-        <div class="logo-container">
+      <footer id="contact">
+        <div class="footer-container">
+          <div class="logo-container">
             <a href="#" class="logo">Мягкие Мечты</a>
-            <a href="#"><img src="./img/logo.jpg" alt=""></a>
+            <a href="#"><img src="./img/logo.jpg" alt="" /></a>
+          </div>
+          <nav class="footer-nav">
+            <ul class="list-footer">
+              <li><a href="" class="item">Главная</a></li>
+              <li><a href="#rabotu" class="item">Наши работы</a></li>
+              <li><a href="#about" class="item">О компании</a></li>
+              <li><a href="#doverie" class="item">Нам доверяют</a></li>
+              <li><a href="#what_you" class="item">Почему мы</a></li>
+              <li><a href="#dostavka" class="item">Доставка и оплата</a></li>
+              <li><a href="#contact" class="item">Контакты +7(499) 480-47-35</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="footer-nav">
-        <ul class="list-footer">
-        <li><a href="" class="item">Главная</a></li>
-        <li><a href="" class="item">Наши работы</a></li>
-        <li><a href="" class="item">О компании</a></li>
-        <li><a href="" class="item">Нам доверяют</a></li>
-        <li><a href="" class="item">Почему мы</a></li>
-        <li><a href="" class="item">Доставка и оплата</a></li>
-        <li><a href="" class="item">Контакты +7(499) 480-47-35</a></li>
-        
-        
-        </ul>
-    </nav>
-</div>
-<div class="adres"><p>Адрес  г. Москва ул. Солнечная, дом 15 </p></div>
+        <div class="adres"><p>Адрес г. Москва ул. Солнечная, дом 15</p></div>
+        <div class="messagers">
+          <img src="./icons/vk.png" class="vk" alt="" />
+          <img src="./icons/телеграм.png" class="tg" alt="" />
+        </div>
+      </footer>
+    </main>
 
-<div class="messagers">
-    <img src="./icons/vk.png" class="vk" alt="">
-    <img src="./icons/телеграм.png" class="tg" alt="">
-</div>
-</footer>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
