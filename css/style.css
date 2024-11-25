@@ -1,6 +1,6 @@
 /* шрифты */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -31,15 +31,13 @@ header {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.item:hover{
-  color: #FD9620;
+.item:hover {
+  color: #fd9620;
 }
 .contact {
   list-style: none;
   margin-left: 150px;
 }
-
-
 
 .logo {
   font-size: 25px;
@@ -58,8 +56,6 @@ img {
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 /* burger */
 .burger-menu_button {
@@ -199,7 +195,7 @@ img {
   font-size: 50px;
   color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-text-align: center;
+  text-align: center;
 }
 
 .text-section p {
@@ -211,12 +207,11 @@ text-align: center;
 .btn-container {
   text-align: center;
   margin-top: 100px;
-
 }
 
 .btn {
   text-decoration: none;
-  background-color: #FD9620;
+  background-color: #fd9620;
   color: white;
   padding: 8px 12px;
   font-size: 25px;
@@ -224,32 +219,28 @@ text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
-.btn:hover{
+.btn:hover {
   background-color: #c26a05;
 }
-
 
 .box {
   padding: 40px;
   text-align: center;
-  background-color: #FD9620;
- margin: 20px 30px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 160px;
-
+  background-color: #fd9620;
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
 }
 
 .qwalety {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 100px));
-margin-left: 250px;
-max-width:  700px;
-gap: 44px;
-  
+  margin-left: 250px;
+  max-width: 700px;
+  gap: 44px;
 }
 
 .qwalety p {
@@ -325,7 +316,7 @@ span {
 
 .years-old-content {
   text-align: center;
-  color: #FD9620;
+  color: #fd9620;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -335,11 +326,11 @@ span {
 
 .year {
   font-size: 200px;
-  color: #FD9620;
+  color: #fd9620;
 }
 
 .page-1 {
-  background-color: #FDDCB7;
+  background-color: #fddcb7;
 }
 
 .img-fox {
@@ -370,7 +361,7 @@ span {
 }
 
 .page-2 {
-  background-color: #FBEDDC;
+  background-color: #fbeddc;
 }
 
 .work {
@@ -434,7 +425,6 @@ span {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  
 }
 
 .icon {
@@ -446,7 +436,6 @@ span {
   color: #000000;
 }
 
-
 .gerls {
   width: 650px;
   height: auto;
@@ -454,7 +443,7 @@ span {
 }
 
 .container-page4 {
-  background-color: #FBEDDC;
+  background-color: #fbeddc;
 }
 
 .content-page-4 {
@@ -462,10 +451,10 @@ span {
   gap: 450px;
   align-items: center;
   flex-wrap: wrap;
+  word-break: break-all;
 }
 
-
-.brends{
+.brends {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -474,63 +463,60 @@ span {
   margin: 0 auto;
   padding-bottom: 260px;
 }
-.brend img{
+.brend img {
   width: 200px;
   max-width: 100%;
   height: auto;
 }
 
-footer{
+footer {
   background-color: #ffffff;
   color: #000000;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   align-items: center;
 }
 
-
-.footer-nav{
-margin: 0 auto;
+.footer-nav {
+  margin: 0 auto;
 }
 
-.contact-footer{
+.contact-footer {
   list-style: none;
-  
 }
 
-.list-footer{
+.list-footer {
   list-style: none;
   display: flex;
   gap: 25px;
 }
 
-.footer-bottom{
- display: flex;
-justify-content: center;
-
+.footer-bottom {
+  display: flex;
+  justify-content: center;
 }
-.adres{
+.adres {
   text-align: center;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.container-p6{
+.container-p6 {
   text-align: center;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
 
-.page-6{
-  background-color:#FBEDDC ;
+.page-6 {
+  background-color: #fbeddc;
 }
 
-.delivery-info{
+.delivery-info {
   padding-bottom: 20px;
 }
 
-.messagers{
+.messagers {
   display: flex;
   justify-content: center;
   gap: 48px;
@@ -538,7 +524,7 @@ justify-content: center;
   flex-wrap: wrap;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 /* media */
@@ -555,59 +541,79 @@ html{
   }
 }
 @media (max-width: 1190px) {
-  .list-footer{
+  .list-footer {
     flex-direction: column;
     text-align: center;
-   
   }
 
-  .footer-container{
+  .footer-container {
     display: flex;
     flex-direction: column;
   }
 }
 
-
 @media (max-width: 768px) {
-.text-section h1{
-font-size: 36px;
-padding-top: 78px;
-}
-   .text-section{
-    font-size: 20px;
-   }
-   .about{
-    font-size: 40px;
-   }
-   .work{
-    font-size: 40px;
-   }
-   .zagolovok-page4{
-    font-size: 40px;
-   }
-   .about-img{
-margin: 0 auto;
-   
-   }
+  .text-section h1 {
+    font-size: 36px;
+    padding-top: 78px;
   }
+  .text-section {
+    font-size: 20px;
+  }
+  .about {
+    font-size: 40px;
+  }
+  .work {
+    font-size: 40px;
+  }
+  .zagolovok-page4 {
+    font-size: 40px;
+  }
+  .about-img {
+    margin: 0 auto;
+  }
+}
 
 @media (max-width: 480px) {
-.text-section h1{
-font-size: 24px;
-padding-top: 78px;
-}
-   .content-about{
-    font-size: 16px;
-   }
-   .about{
-    font-size: 32px;
-   }
-   .work{
-    font-size: 32px;
-   }
-   .zagolovok-page4{
-    font-size: 32px;
-   }
-
-   
+  .text-section h1 {
+    font-size: 24px;
+    padding-top: 78px;
   }
+  .content-about {
+    font-size: 16px;
+  }
+  .about {
+    font-size: 32px;
+  }
+  .work {
+    font-size: 32px;
+  }
+  .zagolovok-page4 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 444px) {
+  .qwalety {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 409px) {
+  .text3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 407px) {
+  .col-1 {
+    margin-left: 40px;
+  }
+  .qwalety {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1566px) {
+  .content-page-4 {
+    display: flex;
+    justify-content: center;
+  }
+}
