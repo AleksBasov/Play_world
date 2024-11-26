@@ -65,21 +65,14 @@ img {
   z-index: 30;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   display: none;
 }
-.burger-menu_button:hover .burger-menu_lines {
-  filter: brightness(0.7);
-}
 
-.burger-menu_button:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+
 
 .burger-menu_lines::before,
 .burger-menu_lines::after,
@@ -127,7 +120,7 @@ img {
   display: flex;
   flex-flow: column;
   height: 50%;
-  background-color: #08aff7;
+  background-color: #ae9203;
   overflow-y: auto;
   right: -100vh;
   -webkit-transition: 0.8s;
